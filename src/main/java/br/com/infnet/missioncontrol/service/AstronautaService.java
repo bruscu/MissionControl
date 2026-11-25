@@ -87,8 +87,8 @@ public class AstronautaService {
         if (astronauta.getIdade() == null || astronauta.getIdade() < 18) {
             throw new IllegalArgumentException("A idade deve ser informada e maior ou igual a 18 anos.");
         }
-        if (astronauta.getAnosExperiencia() == null || astronauta.getAnosExperiencia() < 0) {
-            throw new IllegalArgumentException("Os anos de experiência devem ser informados e não podem ser negativos.");
+        if (astronauta.getAnosExperiencia() != null && astronauta.getAnosExperiencia() < 0) {
+            throw new IllegalArgumentException("Os anos de experiência não podem ser negativos.");
         }
         if (astronauta.getStatus() == null) {
             throw new IllegalArgumentException("O status do astronauta é obrigatório.");
