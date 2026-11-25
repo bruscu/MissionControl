@@ -57,7 +57,7 @@ O ID enviado no corpo é ignorado e um ID é gerado automaticamente.
 
 - Nome e país obrigatórios e não vazios.
 - Idade obrigatória e maior ou igual a 18 anos.
-- Anos de experiência obrigatórios e não negativos.
+- Anos de experiência não podem ser negativos.
 - Status obrigatório.
 - Não permite nomes duplicados (sem diferenciar maiúsculas/minúsculas).
 - IDs zero ou negativos retornam 400.
